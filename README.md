@@ -10,6 +10,15 @@ Synthetic dataset with 1000 samples, 25 features, and 3 labels:
 - stressed
 - degenerating
 
+### SHAP Explainability
+
+SHAP (SHapley Additive exPlanations) was used to interpret the Random Forest classifier.
+
+Because the model is multi-class (healthy / stressed / degenerating), SHAP values were computed per class and then averaged to produce a combined explanation.
+
+This allows identification of the most influential imaging features contributing to phenotype prediction.
+
+
 ## How to Run
 ```
 pip install -r requirements.txt
